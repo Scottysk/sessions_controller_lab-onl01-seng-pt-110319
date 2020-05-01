@@ -7,4 +7,8 @@ class SessionsController < ApplicationController
     redirect_to '/'
   end
   
+  def destroy
+    session.delete :username
+  end
+  
 end
